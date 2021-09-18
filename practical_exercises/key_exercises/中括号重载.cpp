@@ -19,7 +19,7 @@ public:
         employ = new Person[max];
     }
     //返回引用特性是可以直接在放在左值，直接使用
-    double &operator[](char *Name)
+    double &operator[](const char *Name)
     { //重载[]，返回引用
         Person *p;
         for (p = employ; p < employ + n; p++)
